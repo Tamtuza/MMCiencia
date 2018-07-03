@@ -1,0 +1,38 @@
+#banner {
+  border-top: 0.5em solid #e37b40;
+}
+
+#header {
+  color: #f5f5f5;
+}
+
+#header a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.subpage #header {
+  background-color: #e37b40;
+}
+
+.flex-4 .box {
+    width: 30% !important;
+}
+
+.flex-4 .box ul {
+  text-align: left;
+}
+
+.reduced-centered {
+  margin-left: 25%; width: 50%
+}
+
+.flex-4 .box img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.flex-4 .box img:hover {
+    -webkit-filter: none;
+    filter: none;
+}
