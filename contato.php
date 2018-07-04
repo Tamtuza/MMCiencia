@@ -24,7 +24,7 @@
             <a href="sobre.html">Sobre</a>
             <a href="palestras.html">Para Todos</a>
             <a href="oficinas.html">Para Meninas</a>
-            <a href="contato.html">Contato</a>
+            <a href="contato.php">Contato</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
@@ -81,28 +81,54 @@
               </div>
             </div>
             <hr><br><br>
-              <header class="align-center">
-                <h2>Deixe aqui sua mensagem</h2>
-              </header>
+            <header class="align-center">
+              <h2>Deixe aqui sua mensagem</h2>
+            </header>
             <div class="row">
-              <form method="post" action="#" class="reduced-centered">
-                <div class="row uniform">
-                  <div class="6u 12u$(xsmall)">
-                    <input type="text" name="name" id="name" value="" placeholder="Name" />
-                  </div>
-                  <div class="6u$ 12u$(xsmall)">
-                    <input type="email" name="email" id="email" value="" placeholder="Email" />
-                  </div>
-                  <div class="12u$">
-                    <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-                  </div>
-                  <div class="12u$">
-                    <ul class="actions">
-                      <li><input type="submit" value="Send Message" /></li>
-                    </ul>
-                  </div>
-                </div>
-              </form>
+							<?php
+								$destino = 'contato@mmciencia.com.br';
+								$nome = $_POST["nome"];
+								$email = $_POST["email"];
+								$mensagem= $_POST["styled-textarea"];
+
+								$assunto = "Contato do site do evento";
+								$headers .= "From: $email\r\n";
+
+								if ($_POST['enviar']){
+									$resposta = mail("$destino", "$assunto",
+									"Nome: $nome
+									Email: $email
+
+									Mensagem: $mensagem", $headers);
+									if ($resposta == 1){
+										echo '<script type="text/javascript">
+											alert("E-mail enviado com sucesso!");
+										      </script>';
+									}else{
+										echo '<meta http-equiv="refresh" content="5; URL=index.html" />';
+									}
+								} echo "
+			              <form method='post' action='contato.php' class='reduced-centered'>
+			                <div class='row uniform'>
+			                  <div class='6u 12u$(xsmall)'>
+			                    <input type='text' name='nome' id='nome' value='' placeholder='Nome' />
+			                  </div>
+			                  <div class='6u$ 12u$(xsmall)'>
+			                    <input type='email' name='email' id='email' value='' placeholder='Email' />
+			                  </div>
+			                  <div class='12u$'>
+			                    <textarea name='styled-textarea' id='mensagem' placeholder='Digite sua mensagem' rows='6'></textarea>
+			                  </div>
+			                  <div class='12u$'>
+													<ul class='actions'>
+			                      <li><input class='button' type='reset' value='Limpar' /><input type='hidden' name='enviar' value='contato@mmciencia.com.br'></li>
+				                    <li style='float: right'><input class='button special' type='submit' value='Enviar' /></li>
+			                    </ul>
+			                  </div>
+			                </div>
+			              </form>
+										";
+								?>
             </div>
   				</div>
   			</section>

@@ -28,11 +28,63 @@
 }
 
 .flex-4 .box img {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    -webkit-filter: contrast(80%);
+    filter: contrast(80%);
 }
 
-.flex-4 .box img:hover {
-    -webkit-filter: none;
-    filter: none;
+.subpage p {
+  text-align: justify;
+}
+
+/* ----------------------------------------------------------------------------- */
+
+a {
+  color: #0081A7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0081A7;
+}
+
+section.wrapper.style1, article.wrapper.style1 {
+  background: #0081A7;
+}
+
+textarea:focus {
+  border-color: #0081A7;
+  box-shadow: 0 0 0 1px #0081A7;
+}
+
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
+  border-color: #0081A7;
+  box-shadow: 0 0 0 1px #0081A7;
+}
+
+input[type="submit"].special,
+input[type="reset"].special,
+input[type="button"].special,
+button.special,
+.button.special {
+  background-color: #0081A7;
+}
+
+input[type="submit"].special:hover,
+input[type="reset"].special:hover,
+input[type="button"].special:hover,
+button.special:hover,
+.button.special:hover {
+  background-color: #6692c8;
+}
+
+input[type="submit"].special:active,
+input[type="reset"].special:active,
+input[type="button"].special:active,
+button.special:active,
+.button.special:active {
+  background-color: #4278b8;
+}
+
+#navPanel {
+  background: #0081A7;
 }
