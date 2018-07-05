@@ -36,7 +36,7 @@
   text-align: justify;
 }
 
-/* ----------------------------------------------------------------------------- */
+/* COLOR CONFIGS ----------------------------------------------------------------------------- */
 
 a {
   color: #0081A7;
@@ -87,4 +87,23 @@ button.special:active,
 
 #navPanel {
   background: #0081A7;
+}
+
+@media screen and (max-width: 980px) {
+
+  .flex.flex-4 .box {
+    width: 47% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .flex.flex-4 .box {
+    width: 100% !important;
+  }
+
+  .reduced-centered {
+      margin-left: 5%;
+      width: 90%;
+  }
 }
