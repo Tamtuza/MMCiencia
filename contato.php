@@ -86,7 +86,7 @@
             </header>
             <div class="row">
 							<?php
-								$destino = 'mmciencia@gmail.com';
+								$destino = 'contato@mmciencia.com.br';
 								$nome = $_POST["nome"];
 								$email = $_POST["email"];
 								$mensagem= $_POST["styled-textarea"];
@@ -121,7 +121,7 @@
 			                  </div>
 			                  <div class='12u$'>
 													<ul class='actions'>
-			                      <li><input class='button' type='reset' value='Limpar' /><input type='hidden' name='enviar' value='mmciencia@gmail.com'></li>
+			                      <li><input class='button' type='reset' value='Limpar' /><input type='hidden' name='enviar' value='contato@mmciencia.com.br'></li>
 				                    <li style='float: right'><input class='button special' type='submit' value='Enviar' /></li>
 			                    </ul>
 			                  </div>
