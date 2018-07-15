@@ -89,6 +89,69 @@ button.special:active,
   background: #0081A7;
 }
 
+table thead th {
+  /* color: #0081A7; */
+}
+
+table tbody th {
+  border: none;
+  /* border-left: 1px solid #dbdbdb; */
+  border-right: 1px solid #dbdbdb;
+  /* border-bottom: 1px solid #dbdbdb; */
+  /* color: #0081A7; */
+}
+
+.sobre .various tr td {
+  border: none;
+}
+
+table tbody th tr:nth-child(2n + 1) {
+  background-color: #fff;
+}
+
+table tbody tr th:nth-child(2n + 1) {
+  background-color: #fff;
+}
+
+table th {
+  font-size: 100%;
+  text-align: center;
+}
+
+.sobre tbody .featured {
+  /* color: #0081A7; */
+  color: #e37b40;
+  font-weight: bold;
+}
+
+.sobre tr th table tr {
+  border: none;
+}
+
+.sobre .various th {
+  padding: 0px;
+  border: none;
+  border-right: 1px solid #dbdbdb;
+}
+
+.sobre .various th table {
+  margin: 0px;
+}
+
+.sobre .various td {
+  vertical-align: middle;
+}
+
+.sobre-notes tr {
+  border: none;
+}
+
+.sobre-notes tr:nth-child(2n + 1) {
+  background-color: #fff;
+}
+
+/* RESPONSIVE DESIGN CONFIGS ---------------------------------------------------------------- */
+
 @media screen and (max-width: 980px) {
 
   .flex.flex-4 .box {
