@@ -15,11 +15,11 @@
   background-color: #e37b40;
 }
 
-.flex-4 .box {
+.alt-flex-3 .box {
     width: 30% !important;
 }
 
-.flex-4 .box ul {
+.alt-flex-3 .box ul {
   text-align: left;
 }
 
@@ -27,7 +27,7 @@
   margin-left: 25%; width: 50%
 }
 
-.flex-4 .box img {
+.alt-flex-3 .box img {
     -webkit-filter: contrast(80%);
     filter: contrast(80%);
 }
@@ -150,18 +150,26 @@ table th {
   background-color: #fff;
 }
 
+.contato-organizacao {
+  text-align: center;
+}
+
+.contato-organizacao p {
+  text-align: center;
+}
+
 /* RESPONSIVE DESIGN CONFIGS ---------------------------------------------------------------- */
 
 @media screen and (max-width: 980px) {
 
-  .flex.flex-4 .box {
+  .flex.alt-flex-3 .box {
     width: 47% !important;
   }
 }
 
 @media screen and (max-width: 480px) {
 
-  .flex.flex-4 .box {
+  .flex.alt-flex-3 .box {
     width: 100% !important;
   }
 

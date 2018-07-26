@@ -80,6 +80,40 @@
                 </div>
               </div>
             </div>
+						<!-- <div class="row"> -->
+							<div class="flex flex-4">
+								<div class="box person"></div>
+								<div class="box person contato-organizacao">
+									<div class="image round">
+										<img src="images/organizers/fernanda-campos.png" alt="Fernanda Campos">
+									</div>
+									<h3>Fernanda Campos Furtado</h3>
+									<p>Geóloga</p>
+									<p>fecamposfurtado@gmail.com <br>
+										<a href="https://www.linkedin.com/in/fernanda-campos-furtado-06588a57/"
+											 target="_blank"
+											 style="text-decoration:none">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</p>
+								</div>
+								<div class="box person contato-organizacao">
+									<div class="image round">
+										<img src="images/organizers/isabella-tenorio.jpg" alt="Isabella Tenório">
+									</div>
+									<h3>Isabella Tenório Araújo</h3>
+									<p>Geóloga</p>
+									<p>isabella.tenorio@hotmail.com <br>
+										<a href="https://www.linkedin.com/in/isabella-tenorio-837ba13a/"
+											 target="_blank"
+											 style="text-decoration:none">
+											<i class="fa fa-linkedin"></i>
+										</a>
+									</p>
+								</div>
+								<div class="box person"></div>
+							</div>
+						<!-- </div> -->
             <hr><br><br>
             <header class="align-center">
               <h2>Deixe aqui sua mensagem</h2>
@@ -138,7 +172,9 @@
 				<div class="inner">
 					<div class="flex">
 						<div class="copyright">
-							&copy;2018 | Semana de Meninas e Mulheres na Ciência
+							&copy;2018 | Semana de Meninas e Mulheres na Ciência <br><br>
+							Feito com <i class="fa fa-heart" style="color: #0081A7"></i> por
+							<a href="http://tamillys.com" target="_blank" style="color: #0081A7; text-decoration: none">Tamtuza</a>
 						</div>
 						<ul class="icons">
 							<li><a href="https://www.facebook.com/semanademeninasemulheresnaciencia/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
