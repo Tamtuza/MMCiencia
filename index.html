@@ -85,14 +85,7 @@
 									 	<li>Premiada pela  AAPG Distinguished Service Awaard for 2017 </li>
 									</ul>
 								</p>
-								<!-- <p style="text-align: justify">
-										- Gerente de Geologia da PETROBRAS<br>
-									 	- Gerente Geral de Applied Technologies de Libra, no pré-sal, da PETROBRAS<br>
-									 	- Premiada pela  AAPG Distinguished Service Awaard for 2017
-								</p> -->
 							</div>
-						<!-- </article>
-						<article> -->
 							<div class="box person">
 								<div class="image round">
 									<img src="images/guests/glaucia-lemos_eng-de-softwares.jpg" alt="Glaucia Lemos" />
@@ -109,14 +102,7 @@
 										<li>Atua na área de estúdio visual e desenvolvimento de tecnologia </li>
 									</ul>
 								</p>
-								<!-- <p style="text-align: justify">
-									- Most Valuable Professional (MVP) da Microsoft, cargo dado apenas
-										para profissionais excepcionais da empresa <br>
-								 	- Atua na área de estúdio visual e desenvolvimento de tecnologia
-								</p> -->
 							</div>
-						<!-- </article>
-						<article> -->
 							<div class="box person">
 								<div class="image round">
 									<img src="images/guests/simone-maia-evaristo_biologa.png" alt="Simone Maia Evaristo" />
@@ -132,16 +118,7 @@
 										<li>Membro da Academia Internacional de Citologia </li>
 									</ul>
 								</p>
-								<!-- <p style="text-align: justify">
-									- Supervisora na área de ensino técnico do Instituto Nacional do Câncer <br>
-									- Presidente da Associação Nacional de Citotecnologia <br>
-									- Membro da Academia Internacional de Citologia
-								</p> -->
 							</div>
-						<!-- </article> -->
-						<!-- <article> -->
-					<!-- </div>
-					<div class="flex flex-4"> -->
 							<div class="box person">
 								<div class="image round">
 									<img src="images/guests/eliete-bouskela_medica.jpg" alt="Eliete Bouskela" />
@@ -161,8 +138,6 @@
 									</ul>
 								</p>
 							</div>
-						<!-- </article>
-						<article> -->
 							<div class="box person">
 								<div class="image round">
 									<img src="images/guests/mychelle-alves_quimica.jpg" alt="Mychelle Alves" />
@@ -290,37 +265,16 @@
 							</h4>
 						</p>
 					</header>
-					<!-- <div class="box alt">
-						<div class="row 50% uniform">
-							<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-							<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-							<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-
-							<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-							<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-							<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-
-							<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-							<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-							<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
-						</div>
-					</div> -->
 				</div>
 			</section>
 
 			<section id="four" class="wrapper style1 special">
 				<header class="align-center">
 					<h2>Inscrições</h2>
-					<!-- <p>Saiba como e quando se inscrever</p> -->
-				<!-- </header> -->
-				<!-- <div class="inner">
-					<div style="margin-left: 30%; width: 40%"> -->
 						<p>
 							As inscrições para as oficinas e feira de ciências serão abertas em <strong style="color: white">Agosto de 2018</strong>. <br>
 							Não será necessária a inscrição para assistir as palestras e a mesa redonda.
 						</p>
-					<!-- </div> -->
-				<!-- </div> -->
 			</header>
 			</section>
 
@@ -334,6 +288,8 @@
 				</div>
 			</section>
 
+			<a href="#" onclick="topFunction();" id="myBtn" title="Voltar ao topo"><i class="fa fa-4x fa-angle-up"></i></a>
+
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
@@ -346,16 +302,29 @@
 						<ul class="icons">
 							<li><a href="https://www.facebook.com/semanademeninasemulheresnaciencia/" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 							<li><a href="https://www.instagram.com/mmciencia/" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li> -->
-							<!-- <li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li> -->
-							<!-- <li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li> -->
-							<!-- <li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li> -->
 						</ul>
 					</div>
 				</div>
 			</footer>
 
 		<!-- Scripts -->
+			<script language="javascript">
+
+				window.onscroll = function() {scrollFunction()};
+				function scrollFunction() {
+					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+							document.getElementById("myBtn").style.display = "block";
+					} else {
+							document.getElementById("myBtn").style.display = "none";
+					}
+				}
+
+				function topFunction() {
+					$('html, body').animate({scrollTop:0}, 'slow');
+				}
+
+			</script>
+
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
